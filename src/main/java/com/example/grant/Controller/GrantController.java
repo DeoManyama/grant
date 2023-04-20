@@ -30,7 +30,7 @@ public class GrantController {
     }
     //Build Get All Grant REST API
     //http://localhost:8080/api/grants
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<Grant>> getAllGrants(){
         List<Grant> grants;
         grants = grandService.getAllGrant();
